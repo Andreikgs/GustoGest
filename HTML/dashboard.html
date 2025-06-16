@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Restaurante</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <span>🍽️</span>
+      <h1>Restaurante</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html" >Dashboard</a></li>
+        <li><a href="funcionarios.html">Funcionários</a></li>
+        <li><a href="menu.html">Cardápio</a></li>
+        <li><a href="garçom.html">Pedidos</a></li>
+        <li><a href="cozinha.html">Cozinha</a></li>
+        <li><a href="estoque.html">Estoque</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="logout-btn">Sair</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header>
+      <h2>Dashboard</h2>
+    </header>
+    <section class="cards-container">
+      <div class="info-card">
+        <h3>Pedidos do Dia</h3>
+        <span id="pedidos-dia">18</span>
+      </div>
+      <div class="info-card">
+        <h3>Itens em Estoque</h3>
+        <span id="estoque">42</span>
+      </div>
+      <div class="info-card">
+        <h3>Mesas Ativas</h3>
+        <span id="mesas">5</span>
+      </div>
+      <div class="info-card">
+        <h3>Funcionários</h3>
+        <span id="funcionarios">12</span>
+      </div>
+    </section>
+    <section class="welcome">
+      <h4>Bem-vindo ao painel de gerenciamento!</h4>
+      <p>Escolha uma opção no menu ao lado para começar.</p>
+    </section>
+  </main>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

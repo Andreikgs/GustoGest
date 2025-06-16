@@ -1,0 +1,207 @@
+/* =================== SIDEBAR =================== */
+.sidebar {
+    width: 250px;
+    background: #202338;
+    color: #e5e6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    box-shadow: 2px 0 16px 0 rgba(20,20,50,0.10);
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    padding: 36px 0 20px 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    font-size: 2.2rem;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #b497ff;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav li {
+    margin-bottom: 4px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 14px 32px;
+    color: #e5e6fa;
+    text-decoration: none;
+    font-size: 1.08rem;
+    border-left: 4px solid transparent;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.sidebar nav a.active, .sidebar nav a:hover {
+    background: #2c2e44;
+    color: #b497ff;
+    border-left: 4px solid #7e5cff;
+}
+
+.sidebar-footer {
+    padding: 22px 32px;
+    border-top: 1px solid #282a46;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(90deg,#7e5cff,#5056b5);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(90deg,#5056b5,#7e5cff);
+}
+
+@media (max-width:900px) {
+    .sidebar {
+        width: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* =================== MAIN CONTENT =================== */
+body {
+  background: linear-gradient(135deg, #181c27 0%, #23253b 100%);
+  color: #f1f3f6;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.main-content {
+  margin-left: 240px;
+  width: 100%;
+  padding: 48px 32px;
+  background: #181c26;
+  min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar-header h2,
+  .sidebar-menu a {
+    display: none;
+  }
+  .main-content {
+    margin-left: 70px;
+    padding: 24px 7vw;
+  }
+}
+
+/* =================== FORMULÁRIO DE FUNCIONÁRIO =================== */
+h1 {
+  margin-bottom: 32px;
+  font-size: 2rem;
+  color: #b7e0fa;
+  letter-spacing: 1px;
+}
+
+.form-funcionario {
+  background: #212736;
+  padding: 36px 28px;
+  border-radius: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.15);
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  color: #b7e0fa;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #374151;
+  border-radius: 7px;
+  background: #252b3a;
+  color: #f1f3f6;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-group input:focus {
+  border: 1.5px solid #1098ad;
+  background: #222735;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px 28px;
+  border-radius: 6px;
+  border: none;
+  background: #374151;
+  color: #b7e0fa;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #1098ad, #48c6ef);
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn.primary:hover {
+  background: linear-gradient(90deg, #0c7799, #29b6f6);
+}
+
+.btn:hover {
+  background: #232735;
+}
+
+@media (max-width: 800px) {
+  .form-funcionario {
+    padding: 24px 10px;
+  }
+}

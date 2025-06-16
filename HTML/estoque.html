@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Controle de Estoque</title>
+  <link rel="stylesheet" href="../CSS/estoque.css" />
+</head>
+<body>
+  <!-- Sidebar simulada -->
+  <aside class="sidebar">
+    <div class="logo">
+      <span>🍽️</span>
+      <h1>Restaurante</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="funcionarios.html">Funcionários</a></li>
+        <li><a href="menu.html">Cardápio</a></li>
+        <li><a href="garçom.html">Pedidos</a></li>
+        <li><a href="cozinha.html">Cozinha</a></li>
+        <li><a href="estoque.html">Estoque</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="logout-btn">Sair</button>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <div class="page-header">
+      <h1>Controle de Estoque</h1>
+      <button class="add-item-btn" id="openAddStockModal">Adicionar Insumo</button>
+    </div>
+    <div class="stock-table-wrapper">
+      <table class="stock-table">
+        <thead>
+          <tr>
+            <th>Insumo</th>
+            <th>Quantidade</th>
+            <th>Unidade</th>
+            <th>Ajustar</th>
+          </tr>
+        </thead>
+        <tbody id="stock-list">
+          <!-- Itens de estoque serão renderizados aqui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Modal Adicionar/Editar Insumo -->
+  <div class="modal-bg" id="stock-modal-bg">
+    <div class="modal-content">
+      <h2>Novo Insumo</h2>
+      <label for="stock-name">Nome</label>
+      <input type="text" id="stock-name" maxlength="50" />
+
+      <label for="stock-qty">Quantidade</label>
+      <input type="number" id="stock-qty" min="0" max="99999" />
+
+      <label for="stock-unit">Unidade</label>
+      <input type="text" id="stock-unit" maxlength="10" />
+
+      <div class="modal-actions">
+        <button class="btn save" id="save-insumo">Salvar</button>
+        <button class="btn cancel" id="cancel-insumo">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS/estoque.js"></script>
+</body>
+</html>

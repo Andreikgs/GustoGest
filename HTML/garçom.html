@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurante - Tela do Garçom</title>
+  <link rel="stylesheet" href="../CSS/garçom.css">
+</head>
+<body>
+  <!-- Navbar (importar aqui se for componente) -->
+  <aside class="sidebar">
+    <div class="logo">
+      <span>🍽️</span>
+      <h1>Restaurante</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="funcionarios.html">Funcionários</a></li>
+        <li><a href="menu.html">Cardápio</a></li>
+        <li><a href="garçom.html">Pedidos</a></li>
+        <li><a href="cozinha.html">Cozinha</a></li>
+        <li><a href="estoque.html">Estoque</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="logout-btn">Sair</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section class="mesas-section">
+      <h2>Selecione uma Mesa</h2>
+      <div class="mesas-cards" id="mesas-cards">
+        <!-- Cards das mesas gerados via JS -->
+      </div>
+    </section>
+
+    <section class="pedido-section" style="display:none;" id="pedido-section">
+      <h2>Selecionar Itens do Menu</h2>
+      <form id="pedido-form">
+        <div class="itens-menu" id="itens-menu">
+          <!-- Itens do menu gerados via JS -->
+        </div>
+        <button type="submit" class="btn-confirmar">Confirmar Pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="../JS/garçom.js"></script>
+</body>
+</html>

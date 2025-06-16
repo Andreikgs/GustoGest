@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #181c27 0%, #23253b 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #22263c;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(28, 26, 45, 0.7);
+    width: 100%;
+    max-width: 360px;
+    border: 1px solid #272c47;
+}
+
+.login-container h2 {
+    margin-top: 0;
+    color: #b497ff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #bfc9ee;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #393d5b;
+    background: #181c27;
+    color: #f1f3fa;
+    font-size: 1rem;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #7e5cff;
+    background: #23253b;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #7e5cff, #5056b5);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #5056b5, #7e5cff);
+}
+
+.error {
+    color: #ef5350;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 24px 10px;
+    }
+}
