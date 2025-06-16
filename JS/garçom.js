@@ -101,3 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.card-mesa').forEach(card => card.classList.remove('selected'));
   });
 });
+
+const btnLogout = document.querySelector('.logout-btn');
+    btnLogout.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });

@@ -72,4 +72,9 @@ window.onclick = function(e) {
   }
 };
 
+const btnLogout = document.querySelector('.logout-btn');
+    btnLogout.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
+
 renderEstoque();

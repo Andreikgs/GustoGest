@@ -86,3 +86,8 @@ function marcarPedidoPronto(id) {
 
 // Chamada inicial
 document.addEventListener("DOMContentLoaded", renderizarPedidos);
+
+const btnLogout = document.querySelector('.logout-btn');
+    btnLogout.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });

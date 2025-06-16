@@ -32,4 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         value = value.replace(/(\d{5})(\d)/, '$1-$2');
         e.target.value = value;
     });
+
+    const btnLogout = document.querySelector('.logout-btn');
+    btnLogout.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
 });

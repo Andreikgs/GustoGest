@@ -43,4 +43,9 @@ document.getElementById('formItem').addEventListener('submit', (e) => {
 window.abrirModal = abrirModal;
 window.fecharModal = fecharModal;
 
+const btnLogout = document.querySelector('.logout-btn');
+    btnLogout.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
+
 renderizarMenu();
